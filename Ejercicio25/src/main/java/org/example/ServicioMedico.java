@@ -34,5 +34,9 @@ public abstract class ServicioMedico {
         return unaFecha.isEqual(this.fechaAtencion);
     }
 
+    public void setFechaAtencion(LocalDate fechaAtencion) { //para test
+        this.fechaAtencion = fechaAtencion;
+    }
+
     public abstract double calcular();
 }
